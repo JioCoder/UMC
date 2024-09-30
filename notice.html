@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 묻는 질문</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* 네비게이션 바 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+        }
+
+        /* 로고 이미지 스타일 */
+        nav .logo img {
+            height: 50px;
+        }
+
+        /* 메뉴 스타일 */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* sun 아이콘 */
+        nav .icon img {
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .faq-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .faq-section h1 {
+            color: #6BD17B;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .faq-list {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-item h3:after {
+            content: "▼";
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 네비게이션 바 -->
+    <nav>
+        <div class="logo">
+            <a href="main.html">
+                <img src="img/smumc.png" alt="SMUMC Logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="project.html">PROJECTS</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="notice.html">NOTICE</a></li>
+            <li class="icon">
+                <a href="#">
+                    <img src="img/sun.png" alt="Light Mode Icon">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="faq-section">
+        <h1>자주 묻는 질문</h1>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>UMC에 지원하려면 필요한 조건이 있나요?</h3>
+            </div>
+            <div class="faq-item">
+                <h3>정말 제가, 3개월 학습해서 데모데이에 참여할 수 있나요??</h3>
+            </div>
+            <div class="faq-item">
+                <h3>스터디는 어떤 방식으로, 몇시간 정도 진행되는지 알고 싶습니다!</h3>
+            </div>
+            <div class="faq-item">
+                <h3>파트장님들의 실력은 어떤지 알고 싶습니다.</h3>
+            </div>
+            <div class="faq-item">
+                <h3>데모데이에 불참해도 수료가 가능한가요?</h3>
+            </div>
+            <div class="faq-item">
+                <h3>UMC에 합격하면, 데모데이를 무조건 참여할 수 있나요?</h3>
+            </div>
+            <div class="faq-item">
+                <h3>합격해도, 제가 커리큘럼을 잘 따라갈 수 있을지 걱정됩니다, 데모데이때 피해를 주지 않을까 걱정됩니다.</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
