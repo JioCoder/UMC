@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>animation</title>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+            .circle {
+                width: 100px;
+                height: 100px;
+                background-color: purple;
+                border-radius: 50%;
+                /* 애니메이션 설정 */
+                animation: bounce 2s ease-in-out infinite alternate;
+            }
+            @keyframes bounce {
+                0% {
+                    transform: translateY(0) scaleX(1); /* 정상 상태 */
+                    background-color: purple;
+                }
+                50% {
+                    transform: translateY(-250px) scaleY(0.7); /* 위로 이동하면서 찌그러짐 */
+                    background-color: purple;
+                }
+                100% {
+                    transform: translateY(0) scaleX(1); /* 원래 상태로 돌아옴 */
+                    background-color: purple;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="circle"></div>
+    </body>
+</html>

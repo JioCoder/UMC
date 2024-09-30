@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Centering</title>
+    <style>
+        .flex-container {
+            display: flex; /* 플렉스 박스 활성화 */
+            justify-content: center; /* 가로 방향 중앙 정렬 */
+            align-items: center; /* 세로 방향 중앙 정렬 */
+            height: 100vh; /* 전체 화면 높이 */
+            background-color: #f0f0f0; /* 배경색 추가 */
+        }
+
+        .flex-item {
+            padding: 20px; /* 내용 패딩 추가 */
+            background-color: #ccc; /* 박스 배경색 추가 */
+            border-radius: 5px; /* 모서리 둥글게 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            오늘 점심은 샐러드다.
+        </div>
+    </div>
+
+</body>
+</html>

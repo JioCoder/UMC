@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Examples</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: #4CAF50;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 14px;
+        }
+
+        .translate {
+            transform: translate(50px, 50px);
+        }
+
+        .scale {
+            transform: scale(1.5);
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+        }
+
+        .skew {
+            transform: skew(20deg, 10deg);
+        }
+
+        .matrix {
+            transform: matrix(1, 0.5, 0, 1, 30, 20);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box translate">Translate</div>
+    <div class="box scale">Scale</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box skew">Skew</div>
+    <div class="box matrix">Matrix</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Centering</title>
+    <style>
+        .container {
+            position: relative; /* 자식 요소의 절대 위치를 위해 상대 위치 설정 */
+            height: 100vh; /* 전체 화면 높이 */
+            background-color: #f0f0f0; /* 배경색 추가 */
+        }
+
+        .centered-box {
+            position: absolute; /* 절대 위치 설정 */
+            top: 50%; /* 세로 방향 중앙 */
+            left: 50%; /* 가로 방향 중앙 */
+            transform: translate(-50%, -50%); /* 요소를 자신의 크기의 절반만큼 이동 */
+            padding: 20px; /* 내용 패딩 추가 */
+            background-color: #ccc; /* 박스 배경색 추가 */
+            border-radius: 5px; /* 모서리 둥글게 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="centered-box">
+            이제 곧 10월이다
+        </div>
+    </div>
+
+</body>
+</html>
