@@ -15,7 +15,6 @@ const MovieCard = ({ movie, onSelect, imageIndex }) => {
       display: 'block'
     };
   
-    // 이미지 경로가 올바르게 설정되었는지 확인하세요
     const imageUrl = `/images/movie${imageIndex}.jpg`;
   
     return (
@@ -24,7 +23,7 @@ const MovieCard = ({ movie, onSelect, imageIndex }) => {
           src={imageUrl}
           alt={movie.title} 
           style={imageStyle}
-          onError={(e) => { e.target.onerror = null; e.target.src="/images/fallback.jpg"; }}  // 대체 이미지 설정
+          onError={(e) => { e.target.onerror = null; e.target.src="/images/fallback.jpg"; }}  
         />
       </div>
     );

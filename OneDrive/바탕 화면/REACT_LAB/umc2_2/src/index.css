@@ -19,7 +19,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #646cff;
 }
 
 body {
@@ -56,11 +56,11 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #2f485f;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #646cff;
   }
   button {
     background-color: #f9f9f9;
