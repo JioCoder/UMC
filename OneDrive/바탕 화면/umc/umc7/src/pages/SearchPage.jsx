@@ -36,10 +36,10 @@ const SearchPage = () => {
         debounce(() => {
             if (!searchValue) return;
             if (mq === searchValue) return;
-            setSearching(true); // 검색 시작
-            navigate(`/search?mq=${searchValue}`); // URL 업데이트
+            setSearching(true); 
+            navigate(`/search?mq=${searchValue}`); 
         }, 500), // 500ms의 딜레이 후 검색
-        [searchValue, mq, navigate] // 의존성 배열에 mq 추가
+        [searchValue, mq, navigate] 
     );
 
     const handleSearchMovieWithKeyboard = (e) => {
