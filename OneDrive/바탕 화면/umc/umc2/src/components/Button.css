@@ -1,8 +1,8 @@
 .todo-button {
     padding: 8px 10px;
-    background-color: #e7aae1;
+    background-color: #ffe2f8;
     font-size: 14px;
-    color: rgb(255, 255, 255);
+    color: black;
     border: none;
     min-width: 100px;
     border-radius: 4px;
@@ -10,5 +10,5 @@
 }
 
 .todo-button:hover {
-    background-color: #e7aae1;
+    background-color: #ffe2f8;
 }

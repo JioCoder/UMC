@@ -10,8 +10,8 @@
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #fffeb3;
-  width: 700px;
+  background-color: #f9f9f9;
+  width: 400px;
 }
 
 .todo-item {
@@ -27,7 +27,7 @@
 .todo-item p {
   margin: 0;
   font-size: 16px;
-  color: #645858;
+  color: #333;
   flex-grow: 1;
   text-align: left;
 }
