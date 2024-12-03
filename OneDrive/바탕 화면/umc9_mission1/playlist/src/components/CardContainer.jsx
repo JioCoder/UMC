@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import { clearCart } from "../features/cart/cartSlice";
+import { openModal } from "../features/modal/modalSlice";
 
 const CartContainer = () => {
     //const state = useSelector((store) => store.cart);
@@ -25,7 +26,7 @@ const CartContainer = () => {
                     <span>\ {total}원</span>
                 </div>
                 <button className="btn clear-btn" onClick={() => {
-                    dispatch(clearCart());
+                    dispatch(openModal());
                 }} >
                     장바구니 초기화
                 </button>
@@ -83,24 +84,18 @@ const Cart = styled.section`
         }
 
         .clear-btn {
-            background: #e91e63; /* 분홍색 */
+            background: #e74c3c;
             color: white;
             border: none;
-            padding: 12px 24px; /* 패딩을 조금 더 크게 */
-            font-size: 18px; /* 폰트 크기 증가 */
+            padding: 10px 20px;
+            font-size: 16px;
             font-weight: bold;
-            border-radius: 8px; /* 둥근 모서리 */
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease; /* 배경색 변화와 크기 변화 추가 */
+            transition: background-color 0.3s ease;
 
             &:hover {
-                background: #d81b60; /* 마우스를 올렸을 때 더 어두운 분홍색 */
-                transform: scale(1.05); /* 마우스를 올렸을 때 살짝 커지는 효과 */
-            }
-
-            &:active {
-                background: #c2185b; /* 클릭 시 더 어두운 분홍색 */
-                transform: scale(1); /* 클릭 후 크기 초기화 */
+                background: #c0392b;
             }
         }
     }
