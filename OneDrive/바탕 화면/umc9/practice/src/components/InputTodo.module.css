@@ -1,0 +1,70 @@
+
+.InputTodo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    padding: 20px; /* 패딩을 더 넉넉하게 */
+    background-color: #f9f9f9; /* 밝은 회색으로 배경 변경 */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* 둥근 모서리 강조 */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* 그림자 더 강하게 */
+    transition: transform 0.3s ease; /* 마우스 호버 시 효과를 위해 추가 */
+}
+
+.InputTodo:hover {
+    transform: translateY(-5px); /* 살짝 떠오르는 효과 */
+}
+
+/* 입력폼 */
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px; /* 간격 조금 더 넓게 */
+}
+
+/* 입력창 */
+.textbar {
+    padding: 14px; /* 여유로운 패딩 */
+    font-size: 16px;
+    width: 360px; /* 조금 더 넓게 */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* 더 둥근 모서리 */
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textbar:focus {
+    border-color: #ff99d9; /* 포커스 시 더 선명한 분홍색 */
+    box-shadow: 0px 0px 8px rgba(255, 153, 217, 0.6); /* 강조된 외곽선 */
+    outline: none;
+}
+
+/* 제출 버튼 */
+.submitbutton {
+    padding: 14px 30px; /* 버튼을 더 크고 클릭하기 쉽게 */
+    background-color: #ff99d9; /* 밝은 분홍색으로 변경 */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 입체감 추가 */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitbutton:hover {
+    background-color: #ff7fc8; /* 더 짙은 분홍색으로 변경 */
+    transform: translateY(-3px); /* 살짝 올라감 */
+}
+
+.submitbutton:active {
+    background-color: #e667ac; /* 클릭 시 더 어두운 색상 */
+    transform: translateY(0);
+}
